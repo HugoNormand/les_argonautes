@@ -30,4 +30,4 @@ function crewNameCheck(inputCrewName) {
     } else {
       return true
     }
-  }
+}
