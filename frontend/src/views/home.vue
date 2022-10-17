@@ -12,9 +12,9 @@
     <h2>MEMBRES DE L'ÉQUIPAGE</h2>
     <ul>
      <li v-for="member in members"> > {{member.crewname}}</li>
-   </ul>   
+    </ul>   
   </section>
-</main>
+ </main>
 </template>
 
 <script>

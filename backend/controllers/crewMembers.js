@@ -3,7 +3,7 @@ const crewModel = require('../models/crewMembers')
 exports.getAllMembers = (req, res, next) => {
     crewModel.find().sort({ createdAt: -1 })
     .then(members => res.status(200).json(members))
-    .catch(error => res.status(400).json( { error }));
+    .catch(error => res.status(400).json({ error }));
 };
 
 exports.pushMember = (req, res, next) => {

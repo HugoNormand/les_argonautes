@@ -7,6 +7,7 @@ const instance = axios.create({
 export function getMembers() {
     instance.get('/crewMembers')
     .then((res) => { this.members = res.data })
+    .catch(error => console.log(error))
 };
 
 export function postMember() {
@@ -19,6 +20,7 @@ export function postMember() {
             this.getMembers()
             this.crewname = ''
         }) 
+        .catch(error => console.log(error))
     }
 }
 
